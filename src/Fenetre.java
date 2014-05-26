@@ -15,6 +15,13 @@ import javax.swing.JSplitPane;
 
 import java.awt.Dimension;
 
+/**
+ * Classe Fenetre
+ * 
+ * @author HENROT/REYNAUD
+ * @version v1.0
+ */
+
     public class Fenetre extends JFrame
     {
         

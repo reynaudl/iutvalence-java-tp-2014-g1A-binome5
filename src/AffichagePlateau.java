@@ -15,6 +15,13 @@ import javax.swing.JTextField;
 
 import java.awt.Dimension;
 
+/**
+ * Classe  AffichagePlateau
+ * 
+ * @author HENROT/REYNAUD
+ * @version v1.0
+ */
+
 public class AffichagePlateau extends JPanel {
     
     public AffichagePlateau()
