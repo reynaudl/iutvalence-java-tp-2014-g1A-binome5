@@ -61,19 +61,10 @@ public class Echec
     /** entree des valeurs: la position de depart/selection et d'arrivee du pion  */
     public Deplacement obtenirDeplacement()
     {
-        Deplacement deplacement; 
-        Scanner selectionPion = new Scanner(System.in);
+        Deplacement deplacement;
 
-        System.out.println("Veuillez selectionner votre pion :");
-        int numeroligne = selectionPion.nextInt();
-        int numerocolonne = selectionPion.nextInt();
-
-        System.out.println("Veuillez saisir la position d'arrivée :");
-        int numerolignearrivee = selectionPion.nextInt();
-        int numerocolonnearrivee = selectionPion.nextInt();
-
-        deplacement = new Deplacement(numeroligne, numerocolonne,
-                numerolignearrivee, numerocolonnearrivee, echiquier.clone());
+        deplacement = new Deplacement(Bouton.POSITION.obtenirDepart().ligne(), Bouton.POSITION.obtenirDepart().colonne(),
+                Bouton.POSITION.obtenirArrivee().ligne(), Bouton.POSITION.obtenirArrivee().colonne(), echiquier.clone());
         return deplacement;
 
     }

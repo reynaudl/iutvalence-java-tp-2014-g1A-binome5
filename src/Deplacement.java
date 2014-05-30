@@ -8,12 +8,14 @@ public class Deplacement
     
     public Pion[][] echiquier;
     
+    Deplacement(){}
+    
     public Deplacement(int numerolignedepart, int numerocolonnedepart, int numerolignearrivee, int numerocolonnearrivee, Pion[][] echiquier)
     {
         this.depart= new Position(numerolignedepart, numerocolonnedepart);
         this.arrivee= new Position(numerolignearrivee, numerocolonnearrivee);
         this.echiquier = echiquier;
-    } 
+    }
     
     public Position obtenirDepart()
     {
@@ -24,8 +26,6 @@ public class Deplacement
     {
         return arrivee;
     }
-    
-    
     
     
 }

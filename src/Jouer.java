@@ -13,7 +13,7 @@ public class Jouer
     /** permet le lancement de l'application. */
     public static void main(String[] args)
     {
-	SwingUtilities.invokeLater(new AffichageGraphique());
+	
         Echec partie = new Echec();
         partie.jouer();
             
